@@ -7,6 +7,23 @@ function GetCursorPosition() {
     });
 }
 
+function ToggleMobileSubmenu() {
+    const mobileDropBtn = document.getElementById("mob_drop_submenu");
+    const mobileSubMenu = document.getElementById("mob_submenu");
+
+    let open = false;
+    mobileDropBtn.addEventListener("click", () => {
+        if (open) {
+            mobileSubMenu.style.height = "100%";
+            mobileDropBtn.style.transform = "rotate(180deg)";
+        } else {
+            mobileSubMenu.style.height = "0";
+            mobileDropBtn.style.transform = "rotate(0)";
+        }
+        open = !open;
+    });
+}
+
 function ToggleNavbar() {
     const crossBtn = document.getElementById("cross_btn");
     const hamburgerBtn = document.getElementById("hamburger_btn");
@@ -90,14 +107,12 @@ function CurtainWelcomeMessage() {
         const flat = "M0 2S175 1 500 1s500 1 500 1V0H0Z";
 
         // Animate heading text
-        tl.from(".loader-wrap-heading h1", {
+        tl.from(".loader-wrap-heading", {
             y: 200,
-            skewY: 10,
         })
-            .to(".loader-wrap-heading h1", {
+            .to(".loader-wrap-heading", {
                 delay: 1,
                 y: -500,
-                skewY: 20,
                 ease: "power2.in",
             })
             // Animate SVG path to curve and then flatten
@@ -118,7 +133,7 @@ function CurtainWelcomeMessage() {
     });
 }
 
-function AddCopyrightText() {
+function AddCopyrightDate() {
     const copyrightDate = document.getElementById("copyright_date");
     const date = new Date();
     copyrightDate.innerHTML = `${date.getFullYear()}`;
@@ -183,9 +198,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ToggleNavbar();
     ServiceCardObserverAnimation();
     PortfolioTitleObserverAnimation();
-    AddCopyrightText();
+    AddCopyrightDate();
     CurtainWelcomeMessage();
     TechStackObserverAnimation();
     BannerObserverAnimation();
     InnovObserverAnimation();
+    ToggleMobileSubmenu();
 });

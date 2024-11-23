@@ -51,6 +51,10 @@ body {
   max-height: 500px;
 }
 
+.hover_arrow:hover .arrow_icon {
+  transform: rotate(180deg);
+}
+
 .font-manrope {
   font-family: var(--font-secondary);
 }
@@ -77,7 +81,7 @@ body {
   fill: #1a1a1a;
 }
 
-.loader-wrap .loader-wrap-heading h1 {
+.loader-wrap .loader-wrap-heading {
   font-size: 2rem;
   z-index: 100;
   color: #e0e0e0;
