@@ -1,602 +1,798 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../../assets/css/output.css" />
     <title>Innov8ITCode</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- curtain welcome message -->
     <div id="curtain" class="loader-wrap">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
-        <div class="loader-wrap-heading flex items-center justify-center flex-col">
-            <h2 class="flex flex-col items-center justify-center">
-                <span>Welcome</span>
-                <span>To</span>
-            </h2>
-            <div class="curtain_img_container w-32 md:w-52 lg:72">
-                <img src="../../assets/images/logo/white_innov8itcode_logo.jpeg" alt="white innov logo" />
-            </div>
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+      </svg>
+      <div
+        class="loader-wrap-heading flex items-center justify-center flex-col"
+      >
+        <h2
+          class="flex flex-col items-center justify-center font-bold text-[3.25rem]"
+        >
+          <span>Welcome</span>
+          <span>To</span>
+        </h2>
+        <div class="curtain_img_container w-32 md:w-52 lg:72">
+          <img
+            src="../../assets/images/logo/white_innov8itcode_logo.jpeg"
+            alt="white innov logo"
+          />
         </div>
+      </div>
     </div>
 
     <!-- cursor pointer -->
-    <div id="circle"
-        class="rounded-full pointer-events-none bg-black fixed -translate-x-1/2 -translate-y-1/2 transition-transform duration-100 ease-linear z-[999]">
-    </div>
+    <div
+      id="circle"
+      class="rounded-full pointer-events-none bg-black fixed -translate-x-1/2 -translate-y-1/2 transition-transform duration-100 ease-linear z-[999]"
+    ></div>
     <!-- header -->
     <header class="shadow-header md:px-2 md:py-2 sticky top-0 z-50 bg-white">
-        <div class="container--fluid">
-            <div class="header_content flex items-center justify-between">
-                <!-- header logo -->
-                <div>
-                    <div class="header__logo-container w-20">
-                        <img src="../../assets/images/logo/innov8itcode_logo.png" alt="innvo8itcode logo image" />
-                    </div>
-                </div>
-                <!-- main navbar -->
-                <div class="hidden lg:block">
-                    <nav>
-                        <ul class="flex">
-                            <li>
-                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
-                                    href="/">home</a>
-                            </li>
-                            <li>
-                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
-                                    href="/services">services</a>
-                            </li>
-                            <li>
-                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
-                                    href="/courses">courses</a>
-                            </li>
-                            <li class="relative parent_nav">
-                                <a class="nav_link hover_arrow flex items-center gap-1.5 text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
-                                    href="/about">
-                                    <span>about</span>
-                                    <span class="arrow_icon translate-y-[1px] text-[0.9rem] font-bold">
-                                        <i class="fa-solid fa-angle-down"></i>
-                                    </span>
-                                </a>
-                                <ul
-                                    class="submenu top-full left-0 absolute z-[100] bg-white shadow-[0_36px_35px_rgba(0,_0,_0,_0.08)] min-w-[230px]">
-                                    <li class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]">
-                                        <a class="flex items-center justify-between gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
-                                            href="/about#introduction">
-                                            <span>introduction</span>
-                                            <span class="text-white">
-                                                <i class="fa-solid fa-angles-right"></i>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]">
-                                        <a class="flex items-center justify-between gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
-                                            href="/about#instructor">
-                                            <span>instructor</span>
-                                            <span class="text-white">
-                                                <i class="fa-solid fa-angles-right"></i>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]">
-                                        <a class="flex justify-between items-center gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
-                                            href="/about#team_members">
-                                            <span>team members </span>
-                                            <span class="text-white">
-                                                <i class="fa-solid fa-angles-right"></i>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
-                                    href="/blogs">blogs</a>
-                            </li>
-                            <li>
-                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
-                                    href="/contact">contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="flex items-center gap-8">
-                    <!-- get started now -->
-                    <div class="get_started_now hidden md:block">
-                        <button type="button"
-                            class="hover_effect px-6 py-3 bg-[var(--color-primary)] text-[1.0625rem] rounded-[5px] text-white border-none outline-none capitalize">
-                            <span> get started now </span>
-                        </button>
-                    </div>
-                    <!--mobile nav toggle button -->
-                    <div class="mobile_nav_toggler lg:hidden">
-                        <button id="hamburger_btn" type="button">
-                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect y="14" width="20" height="2" fill="#03041c"></rect>
-                                <rect y="7" width="20" height="2" fill="#03041c"></rect>
-                                <rect width="20" height="2" fill="#03041c"></rect>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+      <div class="container--fluid">
+        <div class="header_content flex items-center justify-between">
+          <!-- header logo -->
+          <div>
+            <div class="header__logo-container w-20">
+              <img
+                src="../../assets/images/logo/innov8itcode_logo.png"
+                alt="innvo8itcode logo image"
+              />
             </div>
-        </div>
-        <!-- mobile menu -->
-        <div id="mobile_menu"
-            class="mobile_menu translate-x-[102%] transition-transform duration-500 ease-in fixed right-0 top-0 w-[65%] min-h-screen z-[110] bg-white shadow-[0_15px_40px_-5px_rgba(0,_0,_0,_0.1)]">
-            <div class="mobile_header_container flex items-center justify-between bg-[#1d1e33] px-6 py-4">
-                <div class="logo_container w-16">
-                    <img src="../../assets/images/logo/innov8itcode_logo.png" alt="" />
-                </div>
-                <div class="cross_icon">
-                    <button id="cross_btn" type="button"
-                        class="w-10 h-10 cursor-pointer text-xl rounded-[50%] bg-white text-[var(--color-primary)]">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="nav_container px-6 py-4">
-                <ul>
-                    <li>
-                        <div class="flex items-center">
-                            <a href="/" class="flex justify-between items-center py-2 border-b border-[#f3f3f3] flex-1">
-                                <span class="text-[var(--color-heading)] capitalize font-medium">home</span>
-                            </a>
-                            <span id="mob_drop_submenu" class="bg-[var(--color-primary)] text-white px-4 py-2">
-                                <i class="fa-solid fa-angle-down"></i>
-                            </span>
-                        </div>
-                        <ul id="mob_submenu" class="overflow-hidden h-0">
-                            <li>
-                                <a href="/"
-                                    class="inline-block w-full py-2 border-b capitalize border-[#f3f3f3] px-4">one</a>
-                            </li>
-                        </ul>
+          </div>
+          <!-- main navbar -->
+          <div class="hidden lg:block">
+            <nav>
+              <ul class="flex">
+                <li>
+                  <a
+                    class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                    href="/"
+                    >home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                    href="/services"
+                    >services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                    href="/courses"
+                    >courses</a
+                  >
+                </li>
+                <li class="relative parent_nav">
+                  <a
+                    class="nav_link hover_arrow flex items-center gap-1.5 text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                    href="/about"
+                  >
+                    <span>about</span>
+                    <span
+                      class="arrow_icon translate-y-[1px] text-[0.9rem] font-bold"
+                    >
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </a>
+                  <ul
+                    class="submenu top-full left-0 absolute z-[100] bg-white shadow-[0_36px_35px_rgba(0,_0,_0,_0.08)] min-w-[230px]"
+                  >
+                    <li
+                      class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]"
+                    >
+                      <a
+                        class="flex items-center justify-between gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
+                        href="/about#introduction"
+                      >
+                        <span>introduction</span>
+                        <span class="text-white">
+                          <i class="fa-solid fa-angles-right"></i>
+                        </span>
+                      </a>
                     </li>
-                </ul>
+                    <li
+                      class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]"
+                    >
+                      <a
+                        class="flex items-center justify-between gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
+                        href="/about#instructor"
+                      >
+                        <span>instructor</span>
+                        <span class="text-white">
+                          <i class="fa-solid fa-angles-right"></i>
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]"
+                    >
+                      <a
+                        class="flex justify-between items-center gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
+                        href="/about#team_members"
+                      >
+                        <span>team members </span>
+                        <span class="text-white">
+                          <i class="fa-solid fa-angles-right"></i>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                    href="/blogs"
+                    >blogs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                    href="/contact"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center gap-8">
+            <!-- get started now -->
+            <div class="get_started_now hidden md:block">
+              <button
+                type="button"
+                class="hover_effect px-6 py-3 bg-[var(--color-primary)] text-[1.0625rem] rounded-[5px] text-white border-none outline-none capitalize"
+              >
+                <span> get started now </span>
+              </button>
             </div>
+            <!--mobile nav toggle button -->
+            <div class="mobile_nav_toggler lg:hidden">
+              <button id="hamburger_btn" type="button">
+                <svg
+                  width="20"
+                  height="16"
+                  viewBox="0 0 20 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect y="14" width="20" height="2" fill="#03041c"></rect>
+                  <rect y="7" width="20" height="2" fill="#03041c"></rect>
+                  <rect width="20" height="2" fill="#03041c"></rect>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- mobile menu -->
+      <div
+        id="mobile_menu"
+        class="mobile_menu translate-x-[102%] transition-transform duration-500 ease-in fixed right-0 top-0 w-[65%] min-h-screen z-[110] bg-white shadow-[0_15px_40px_-5px_rgba(0,_0,_0,_0.1)]"
+      >
+        <div
+          class="mobile_header_container flex items-center justify-between bg-[#1d1e33] px-6 py-4"
+        >
+          <div class="logo_container w-16">
+            <img src="../../assets/images/logo/innov8itcode_logo.png" alt="" />
+          </div>
+          <div class="cross_icon">
+            <button
+              id="cross_btn"
+              type="button"
+              class="w-10 h-10 cursor-pointer text-xl rounded-[50%] bg-white text-[var(--color-primary)]"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <div class="nav_container px-6 py-4">
+          <ul>
+            <li>
+              <div class="flex items-center">
+                <a
+                  href="/"
+                  class="flex justify-between items-center py-2 border-b border-[#f3f3f3] flex-1"
+                >
+                  <span
+                    class="text-[var(--color-heading)] capitalize font-medium"
+                    >home</span
+                  >
+                </a>
+                <span
+                  id="mob_drop_submenu"
+                  class="bg-[var(--color-primary)] text-white px-4 py-2"
+                >
+                  <i class="fa-solid fa-angle-down"></i>
+                </span>
+              </div>
+              <ul id="mob_submenu" class="overflow-hidden h-0">
+                <li>
+                  <a
+                    href="/"
+                    class="inline-block w-full py-2 border-b capitalize border-[#f3f3f3] px-4"
+                    >one</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!-- main -->
     <main>
-        <section class="pt-10 md:pt-16 overflow-x-hidden">
-            <div class="container--fluid">
-                <div class="banner_content flex flex-col gap-8 py-2 md:flex-row">
-                    <div id="banner_desc"
-                        class="banner_left order-2 md:order-1 flex-1 -translate-x-full transition-transform duration-500 ease-in-out">
-                        <div class="banner_description mb-10">
-                            <h2
-                                class="text-[2rem] text-[var(--color-heading)] font-semibold leading-[1.19] font-manrope mt-7 mb-6 md:text-[2.25rem] lg:text-[2.75rem] xl:text-[3.5rem]">
-                                Acheiving Success
-                            </h2>
-                            <p class="leading-[1.75rem]">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                                quis. Ullam accusantium dignissimos repellendus nemo fugiat
-                                numquam, nisi odio adipisci. Veniam neque itaque expedita
-                                officiis rem ipsa! Ratione, rem reiciendis?
-                            </p>
-                        </div>
-                        <div class="banner_links">
-                            <a href="/"
-                                class="hover_effect inline-block bg-[var(--color-primary)] py-2.5 px-6 rounded-[5px] capitalize text-white text-lg">
-                                <span> get started </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="banner_img"
-                        class="banner_right order-1 md:order-2 flex-1 translate-x-full transition-transform duration-500 ease-in-out">
-                        <div class="board bg-white px-6 py-6 shadow-[0px_7px_18px_rgba(24,_16,_16,_0.0509803922)]">
-                            <div class="img_container">
-                                <img src="https://bizper.pixcelsthemes.com/bizper/assets/images/about/about-3.png"
-                                    alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section class="pt-10 md:pt-16 overflow-x-hidden">
+        <div class="container--fluid">
+          <div class="banner_content flex flex-col gap-8 py-2 md:flex-row">
+            <div
+              id="banner_desc"
+              class="banner_left order-2 md:order-1 flex-1 -translate-x-full transition-transform duration-500 ease-in-out"
+            >
+              <div class="banner_description mb-10">
+                <h2
+                  class="text-[2rem] text-[var(--color-heading)] font-semibold leading-[1.19] font-manrope mt-7 mb-6 md:text-[2.25rem] lg:text-[2.75rem] xl:text-[3.5rem]"
+                >
+                  Acheiving Success
+                </h2>
+                <p class="leading-[1.75rem]">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                  quis. Ullam accusantium dignissimos repellendus nemo fugiat
+                  numquam, nisi odio adipisci. Veniam neque itaque expedita
+                  officiis rem ipsa! Ratione, rem reiciendis?
+                </p>
+              </div>
+              <div class="banner_links">
+                <a
+                  href="/"
+                  class="hover_effect inline-block bg-[var(--color-primary)] py-2.5 px-6 rounded-[5px] capitalize text-white text-lg"
+                >
+                  <span> get started </span>
+                </a>
+              </div>
             </div>
-        </section>
-        <section class="pt-16 md:pt-24">
-            <div class="container--fluid">
-                <div class="services_card_content">
-                    <div class="card_container grid gap-8 sm:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr]">
-                        <div
-                            class="card service_card px-6 py-6 flex flex-col items-center gap-4 shadow-[0px_0px_14px_0px_rgba(0,_0,_0,_0.09)] rounded-[5px] observer_animation">
-                            <div class="img_section">
-                                <div class="img_container border-b border-[#e7e7e7] py-2">
-                                    <img src="https://bizper.pixcelsthemes.com/bizper/assets/images/services/agency-6.svg"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="card_description flex flex-col gap-2 items-center">
-                                <h2
-                                    class="text-[1.375rem] leading-[2.1875rem] font-bold font-manrope text-[var(--color-heading)]">
-                                    Web App Development
-                                </h2>
-                                <p class="leading-[1.75] text-center">
-                                    This is text description. Right now i don't what should go
-                                    in here, but later I'm gonna think about it.
-                                </p>
-                            </div>
-                            <div class="three_dots flex gap-1">
-                                <div class="dot_one w-1 h-1 bg-black"></div>
-                                <div class="dot_two w-1 h-1 bg-black"></div>
-                                <div class="dot_three w-1 h-1 bg-black"></div>
-                            </div>
-                        </div>
-                        <!-- card 2 -->
-                        <div
-                            class="card observer_animation service_card px-6 py-6 flex flex-col items-center gap-5 shadow-[0px_0px_14px_0px_rgba(0,_0,_0,_0.09)] rounded-[5px]">
-                            <div class="img_section">
-                                <div class="img_container border-b border-[#e7e7e7] py-2">
-                                    <img src="https://bizper.pixcelsthemes.com/bizper/assets/images/services/agency-6.svg"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="card_description flex flex-col gap-2 items-center">
-                                <h2
-                                    class="text-[1.375rem] leading-[2.1875rem] font-bold font-manrope text-[var(--color-heading)]">
-                                    Web App Development
-                                </h2>
-                                <p class="leading-[1.75] text-center">
-                                    This is text description. Right now i don't what should go
-                                    in here, but later I'm gonna think about it.
-                                </p>
-                            </div>
-                            <div class="three_dots flex gap-1">
-                                <div class="dot_one w-1 h-1 bg-black"></div>
-                                <div class="dot_two w-1 h-1 bg-black"></div>
-                                <div class="dot_three w-1 h-1 bg-black"></div>
-                            </div>
-                        </div>
-                        <!-- card 3 -->
+            <div
+              id="banner_img"
+              class="banner_right order-1 md:order-2 flex-1 translate-x-full transition-transform duration-500 ease-in-out"
+            >
+              <div
+                class="board bg-white px-6 py-6 shadow-[0px_7px_18px_rgba(24,_16,_16,_0.0509803922)]"
+              >
+                <div class="img_container">
+                  <img
+                    src="https://bizper.pixcelsthemes.com/bizper/assets/images/about/about-3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-16 md:pt-24">
+        <div class="container--fluid">
+          <div class="services_card_content">
+            <div
+              class="card_container grid gap-8 sm:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr]"
+            >
+              <div
+                class="card service_card px-6 py-6 flex flex-col items-center gap-4 shadow-[0px_0px_14px_0px_rgba(0,_0,_0,_0.09)] rounded-[5px] observer_animation"
+              >
+                <div class="img_section">
+                  <div class="img_container border-b border-[#e7e7e7] py-2">
+                    <img
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/services/agency-6.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="card_description flex flex-col gap-2 items-center">
+                  <h2
+                    class="text-[1.375rem] leading-[2.1875rem] font-bold font-manrope text-[var(--color-heading)]"
+                  >
+                    Web App Development
+                  </h2>
+                  <p class="leading-[1.75] text-center">
+                    This is text description. Right now i don't what should go
+                    in here, but later I'm gonna think about it.
+                  </p>
+                </div>
+                <div class="three_dots flex gap-1">
+                  <div class="dot_one w-1 h-1 bg-black"></div>
+                  <div class="dot_two w-1 h-1 bg-black"></div>
+                  <div class="dot_three w-1 h-1 bg-black"></div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div
+                class="card observer_animation service_card px-6 py-6 flex flex-col items-center gap-5 shadow-[0px_0px_14px_0px_rgba(0,_0,_0,_0.09)] rounded-[5px]"
+              >
+                <div class="img_section">
+                  <div class="img_container border-b border-[#e7e7e7] py-2">
+                    <img
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/services/agency-6.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="card_description flex flex-col gap-2 items-center">
+                  <h2
+                    class="text-[1.375rem] leading-[2.1875rem] font-bold font-manrope text-[var(--color-heading)]"
+                  >
+                    Web App Development
+                  </h2>
+                  <p class="leading-[1.75] text-center">
+                    This is text description. Right now i don't what should go
+                    in here, but later I'm gonna think about it.
+                  </p>
+                </div>
+                <div class="three_dots flex gap-1">
+                  <div class="dot_one w-1 h-1 bg-black"></div>
+                  <div class="dot_two w-1 h-1 bg-black"></div>
+                  <div class="dot_three w-1 h-1 bg-black"></div>
+                </div>
+              </div>
+              <!-- card 3 -->
 
-                        <div
-                            class="card observer_animation service_card px-6 py-6 flex flex-col items-center gap-5 shadow-[0px_0px_14px_0px_rgba(0,_0,_0,_0.09)] rounded-[5px]">
-                            <div class="img_section">
-                                <div class="img_container border-b border-[#e7e7e7] py-2">
-                                    <img src="https://bizper.pixcelsthemes.com/bizper/assets/images/services/agency-6.svg"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="card_description flex flex-col gap-2 items-center">
-                                <h2
-                                    class="text-[1.375rem] leading-[2.1875rem] font-bold font-manrope text-[var(--color-heading)]">
-                                    Web App Development
-                                </h2>
-                                <p class="leading-[1.75] text-center">
-                                    This is text description. Right now i don't what should go
-                                    in here, but later I'm gonna think about it.
-                                </p>
-                            </div>
-                            <div class="three_dots flex gap-1">
-                                <div class="dot_one w-1 h-1 bg-black"></div>
-                                <div class="dot_two w-1 h-1 bg-black"></div>
-                                <div class="dot_three w-1 h-1 bg-black"></div>
-                            </div>
-                        </div>
-                    </div>
+              <div
+                class="card observer_animation service_card px-6 py-6 flex flex-col items-center gap-5 shadow-[0px_0px_14px_0px_rgba(0,_0,_0,_0.09)] rounded-[5px]"
+              >
+                <div class="img_section">
+                  <div class="img_container border-b border-[#e7e7e7] py-2">
+                    <img
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/services/agency-6.svg"
+                      alt=""
+                    />
+                  </div>
                 </div>
-            </div>
-        </section>
-        <section class="pt-14 md:pt-24 overflow-x-hidden">
-            <div class="container--fluid">
-                <div class="innov8itcode_content flex flex-col md:items-center gap-8 md:flex-row">
-                    <div id="innov_desc"
-                        class="innov_left md:flex-1 -translate-x-full transition-transform duration-500 ease-in-out">
-                        <div class="innov_desc">
-                            <h2
-                                class="text-[1.75rem] md:text-[2.25rem] mb-8 font-bold text-[var(--color-heading)] leading-10 font-manrope">
-                                What is Innov8ITCode?
-                            </h2>
-                            <p class="leading-[1.75rem] mb-[1.5rem]">
-                                Randomised words which don't look even slightly believable. If
-                                you are to use a passage of Lorem Ipsum. You need to be sure
-                                there isn't anything embarrassing hidden in the middle of
-                                text. in some form, by injectedeed bedhumour, or randomised
-                                even. You need to be sure there isn't anything embarrassing
-                                hidden in the middle of text. in some form, by injectedeed
-                                bedhumour, or randomised even.
-                            </p>
-                            <div>
-                                <a href="/"
-                                    class="hover_effect inline-block uppercase bg-[var(--color-primary)] px-6 py-3 text-white rounded-[5px]">
-                                    <span> contact with us </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="innov_img"
-                        class="innov_right translate-x-full transition-transform duration-500 ease-in-out md:flex-1">
-                        <div class="img_container">
-                            <img src="https://bizper.pixcelsthemes.com/bizper/assets/images/about/about-large.jpg"
-                                alt="" />
-                        </div>
-                    </div>
+                <div class="card_description flex flex-col gap-2 items-center">
+                  <h2
+                    class="text-[1.375rem] leading-[2.1875rem] font-bold font-manrope text-[var(--color-heading)]"
+                  >
+                    Web App Development
+                  </h2>
+                  <p class="leading-[1.75] text-center">
+                    This is text description. Right now i don't what should go
+                    in here, but later I'm gonna think about it.
+                  </p>
                 </div>
-            </div>
-        </section>
-        <section class="pt-14 md:pt-24">
-            <div class="container--fluid">
-                <div class="portfolio_content">
-                    <div id="portfolio_heading" class="translate-y-[80%] transition-transform duration-300 ease-linear">
-                        <div class="flex justify-center gap-4 mb-4">
-                            <div class="bars flex gap-1 items-center">
-                                <div class="bar_one w-0.5 h-3 bg-[var(--color-primary)]"></div>
-                                <div class="bar_two w-0.5 h-5 bg-[var(--color-primary)]"></div>
-                                <div class="bar_three w-0.5 h-3 bg-[var(--color-primary)]"></div>
-                            </div>
-                            <h2 class="text-[var(--color-primary)] font-bold uppercase font-manrope">
-                                Our portfolio
-                            </h2>
-                        </div>
-                        <div class="sub_heading mb-8">
-                            <h3
-                                class="text-[2.25rem] leading-[2.8125rem] capitalize text-[var(--color-heading)] font-bold font-manrope text-center">
-                                Let's check our best works
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="profolio_container grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-                        <div class="portfolio_card px-8 py-8 rounded-[8px] shadow-[0px_2px_20px_rgba(0,_0,_0,_0.1)]">
-                            <div class="img_container overflow-hidden">
-                                <img src="https://bizper.pixcelsthemes.com/bizper/assets/images/product/07.jpg"
-                                    class="rounded-[8px] w-full hover:scale-110 transition-transform duration-300 ease-in-out"
-                                    alt="" />
-                            </div>
-                            <div class="desc text-[var(--color-heading)] font-manrope pt-4">
-                                <h4 class="text-[#292929] leading-[1.5rem] mb-2">
-                                    Web Application
-                                </h4>
-                                <h3 class="text-[1.5rem] font-semibold">
-                                    Mobile app desing UI/UX in figma
-                                </h3>
-                            </div>
-                        </div>
-                        <!-- portfolio two -->
-                        <div class="profolio_container">
-                            <div
-                                class="portfolio_card px-8 py-8 rounded-[8px] shadow-[0px_2px_20px_rgba(0,_0,_0,_0.1)]">
-                                <div class="img_container overflow-hidden">
-                                    <img src="https://bizper.pixcelsthemes.com/bizper/assets/images/product/07.jpg"
-                                        class="rounded-[8px] w-full hover:scale-110 transition-transform duration-300 ease-in-out"
-                                        alt="" />
-                                </div>
-                                <div class="desc text-[var(--color-heading)] font-manrope pt-4">
-                                    <h4 class="text-[#292929] leading-[1.5rem] mb-2">
-                                        Web Application
-                                    </h4>
-                                    <h3 class="text-[1.5rem] font-semibold">
-                                        Mobile app desing UI/UX in figma
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="three_dots flex gap-1">
+                  <div class="dot_one w-1 h-1 bg-black"></div>
+                  <div class="dot_two w-1 h-1 bg-black"></div>
+                  <div class="dot_three w-1 h-1 bg-black"></div>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- tech stack -->
-        <section class="py-14 md:py-24">
-            <div class="container--fluid">
-                <div class="tech_stack_content">
-                    <div id="tech_stack_heading"
-                        class="tech_stack_title pb-8 translate-y-[80%] transition-transform duration-300 ease-linear">
-                        <h2
-                            class="text-[2.25rem] font-manrope leading-[2.25rem] capitalize text-[var(--color-primary)] text-center font-semibold">
-                            tech stack
-                        </h2>
-                    </div>
-                    <div class="tech_stack_container">
-                        <div class="tech_stack_top flex justify-center flex-wrap md:flex-nowrap md:justify-between">
-                            <div class="tech_stack_card">
-                                <div class="card_img w-full">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="tech_stack_card">
-                                <div class="card_img w-full">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="tech_stack_card">
-                                <div class="card_img w-full">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="tech_stack_card">
-                                <div class="card_img w-full">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="tech_stack_card">
-                                <div class="card_img w-full">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tech_stack_bottom flex justify-center md:justify-between flex-wrap md:flex-nowrap">
-                            <div class="tech_stack_card">
-                                <div class="card_img">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="tech_stack_card">
-                                <div class="card_img w-full">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="tech_stack_card">
-                                <div class="card_img w-full">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="tech_stack_card">
-                                <div class="card_img w-full">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="tech_stack_card">
-                                <div class="card_img w-full">
-                                    <img class="w-full"
-                                        src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
-                                        alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-14 md:pt-24 overflow-x-hidden">
+        <div class="container--fluid">
+          <div
+            class="innov8itcode_content flex flex-col md:items-center gap-8 md:flex-row"
+          >
+            <div
+              id="innov_desc"
+              class="innov_left md:flex-1 -translate-x-full transition-transform duration-500 ease-in-out"
+            >
+              <div class="innov_desc">
+                <h2
+                  class="text-[1.75rem] md:text-[2.25rem] mb-8 font-bold text-[var(--color-heading)] leading-10 font-manrope"
+                >
+                  What is Innov8ITCode?
+                </h2>
+                <p class="leading-[1.75rem] mb-[1.5rem]">
+                  Randomised words which don't look even slightly believable. If
+                  you are to use a passage of Lorem Ipsum. You need to be sure
+                  there isn't anything embarrassing hidden in the middle of
+                  text. in some form, by injectedeed bedhumour, or randomised
+                  even. You need to be sure there isn't anything embarrassing
+                  hidden in the middle of text. in some form, by injectedeed
+                  bedhumour, or randomised even.
+                </p>
+                <div>
+                  <a
+                    href="/"
+                    class="hover_effect inline-block uppercase bg-[var(--color-primary)] px-6 py-3 text-white rounded-[5px]"
+                  >
+                    <span> contact with us </span>
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
+            <div
+              id="innov_img"
+              class="innov_right translate-x-full transition-transform duration-500 ease-in-out md:flex-1"
+            >
+              <div class="img_container">
+                <img
+                  src="https://bizper.pixcelsthemes.com/bizper/assets/images/about/about-large.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-14 md:pt-24">
+        <div class="container--fluid">
+          <div class="portfolio_content">
+            <div
+              id="portfolio_heading"
+              class="translate-y-[80%] transition-transform duration-300 ease-linear"
+            >
+              <div class="flex justify-center gap-4 mb-4">
+                <div class="bars flex gap-1 items-center">
+                  <div
+                    class="bar_one w-0.5 h-3 bg-[var(--color-primary)]"
+                  ></div>
+                  <div
+                    class="bar_two w-0.5 h-5 bg-[var(--color-primary)]"
+                  ></div>
+                  <div
+                    class="bar_three w-0.5 h-3 bg-[var(--color-primary)]"
+                  ></div>
+                </div>
+                <h2
+                  class="text-[var(--color-primary)] font-bold uppercase font-manrope"
+                >
+                  Our portfolio
+                </h2>
+              </div>
+              <div class="sub_heading mb-8">
+                <h3
+                  class="text-[2.25rem] leading-[2.8125rem] capitalize text-[var(--color-heading)] font-bold font-manrope text-center"
+                >
+                  Let's check our best works
+                </h3>
+              </div>
+            </div>
+            <div
+              class="profolio_container grid gap-8 md:grid-cols-2 xl:grid-cols-3"
+            >
+              <div
+                class="portfolio_card px-8 py-8 rounded-[8px] shadow-[0px_2px_20px_rgba(0,_0,_0,_0.1)]"
+              >
+                <div class="img_container overflow-hidden">
+                  <img
+                    src="https://bizper.pixcelsthemes.com/bizper/assets/images/product/07.jpg"
+                    class="rounded-[8px] w-full hover:scale-110 transition-transform duration-300 ease-in-out"
+                    alt=""
+                  />
+                </div>
+                <div class="desc text-[var(--color-heading)] font-manrope pt-4">
+                  <h4 class="text-[#292929] leading-[1.5rem] mb-2">
+                    Web Application
+                  </h4>
+                  <h3 class="text-[1.5rem] font-semibold">
+                    Mobile app desing UI/UX in figma
+                  </h3>
+                </div>
+              </div>
+              <!-- portfolio two -->
+              <div class="profolio_container">
+                <div
+                  class="portfolio_card px-8 py-8 rounded-[8px] shadow-[0px_2px_20px_rgba(0,_0,_0,_0.1)]"
+                >
+                  <div class="img_container overflow-hidden">
+                    <img
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/product/07.jpg"
+                      class="rounded-[8px] w-full hover:scale-110 transition-transform duration-300 ease-in-out"
+                      alt=""
+                    />
+                  </div>
+                  <div
+                    class="desc text-[var(--color-heading)] font-manrope pt-4"
+                  >
+                    <h4 class="text-[#292929] leading-[1.5rem] mb-2">
+                      Web Application
+                    </h4>
+                    <h3 class="text-[1.5rem] font-semibold">
+                      Mobile app desing UI/UX in figma
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- tech stack -->
+      <section class="py-14 md:py-24">
+        <div class="container--fluid">
+          <div class="tech_stack_content">
+            <div
+              id="tech_stack_heading"
+              class="tech_stack_title pb-8 translate-y-[80%] transition-transform duration-300 ease-linear"
+            >
+              <h2
+                class="text-[2.25rem] font-manrope leading-[2.25rem] capitalize text-[var(--color-primary)] text-center font-semibold"
+              >
+                tech stack
+              </h2>
+            </div>
+            <div class="tech_stack_container">
+              <div
+                class="tech_stack_top flex justify-center flex-wrap md:flex-nowrap md:justify-between"
+              >
+                <div class="tech_stack_card">
+                  <div class="card_img w-full">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="tech_stack_card">
+                  <div class="card_img w-full">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="tech_stack_card">
+                  <div class="card_img w-full">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="tech_stack_card">
+                  <div class="card_img w-full">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="tech_stack_card">
+                  <div class="card_img w-full">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tech_stack_bottom flex justify-center md:justify-between flex-wrap md:flex-nowrap"
+              >
+                <div class="tech_stack_card">
+                  <div class="card_img">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="tech_stack_card">
+                  <div class="card_img w-full">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="tech_stack_card">
+                  <div class="card_img w-full">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="tech_stack_card">
+                  <div class="card_img w-full">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="tech_stack_card">
+                  <div class="card_img w-full">
+                    <img
+                      class="w-full"
+                      src="https://bizper.pixcelsthemes.com/bizper/assets/images/brand/07.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer -->
     <footer class="bg-[#03041C] text-[var(--color-white)]">
-        <div class="container--fluid">
-            <div class="footer_main_content py-[2.5rem]">
-                <div class="left">
-                    <div class="h-auto w-28">
-                        <img src="../../assets/images/logo/white_innov.png" alt="logo of innov8itcode" />
-                    </div>
-                    <div class="md:flex md:gap-16 lg:gap-96 xl:justify-between xl:gap-0 md:mb-12">
-                        <div class="description mb-6">
-                            <p class="leading-[1.75rem] max-w-[320px] lg:max-w-[420px] mb-[1.25rem]">
-                                Join us at Innov8ITCode, where hands-on learning meets expert
-                                instruction to equip you with the skills needed for a
-                                successful career.
-                            </p>
-                        </div>
-                        <div>
-                            <div class="opening-hours flex items-center gap-6 mb-8">
-                                <span class="text-[2.3rem]">
-                                    <i class="fa-sharp fa-regular fa-clock fa-xl"></i>
-                                </span>
-                                <ul class="space-y-2">
-                                    <li>
-                                        <span> Sunday - Friday </span>
-                                    </li>
-                                    <li>
-                                        <span> 9:00 AM - 6:00 PM </span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="social-media flex items-center gap-5 mb-8">
-                                <a href="" target="_blank"
-                                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                                <a href="" target="_blank"
-                                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                                <a href="" target="_blank"
-                                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in">
-                                    <i class="fa-brands fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container--fluid">
+        <div class="footer_main_content py-[2.5rem]">
+          <div class="left">
+            <div class="h-auto w-28">
+              <img
+                src="../../assets/images/logo/white_innov.png"
+                alt="logo of innov8itcode"
+              />
+            </div>
+            <div
+              class="md:flex md:gap-16 lg:gap-96 xl:justify-between xl:gap-0 md:mb-12"
+            >
+              <div class="description mb-6">
+                <p
+                  class="leading-[1.75rem] max-w-[320px] lg:max-w-[420px] mb-[1.25rem]"
+                >
+                  Join us at Innov8ITCode, where hands-on learning meets expert
+                  instruction to equip you with the skills needed for a
+                  successful career.
+                </p>
+              </div>
+              <div>
+                <div class="opening-hours flex items-center gap-6 mb-8">
+                  <span class="text-[2.3rem]">
+                    <i class="fa-sharp fa-regular fa-clock fa-xl"></i>
+                  </span>
+                  <ul class="space-y-2">
+                    <li>
+                      <span> Sunday - Friday </span>
+                    </li>
+                    <li>
+                      <span> 9:00 AM - 6:00 PM </span>
+                    </li>
+                  </ul>
                 </div>
 
-                <div class="right sm:flex sm:justify-between">
-                    <div class="mb-8">
-                        <h2 class="md:text-[1.25rem] font-bold leading-[1.24] font-manrope capitalize mb-6">
-                            Quick Link
-                        </h2>
-                        <ul class="space-y-[6px]">
-                            <li><a href="/about">About Company</a></li>
-                            <li><a href="/team">Meet Our Team</a></li>
-                            <li><a href="/services">Services</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="mb-8">
-                        <h2 class="md:text-[1.25rem] font-bold mb-8 leading-[1.24] font-manrope capitalize">
-                            blogs
-                        </h2>
-                        <ul class="space-y-[6px]">
-                            <li><a href="/about">About Company</a></li>
-                            <li><a href="/team">Meet Our Team</a></li>
-                            <li><a href="/services">Services</a></li>
-                            <li><a href="/contact">Contact Us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="mb-8">
-                        <h2 class="md:text-[1.25rem] mb-8 font-bold leading-[1.24] font-manrope capitalize">
-                            official info
-                        </h2>
-                        <address class="not-italic">
-                            <p class="mb-4">Thapagaun, New Baneshwor, Nepal</p>
-                            <div class="space-y-5">
-                                <div class="flex items-center gap-x-4 py-2 px-8 border rounded-lg">
-                                    <span>
-                                        <i class="fa-solid fa-envelope-open-text fa-lg" aria-hidden="true"></i>
-                                    </span>
-                                    <a href="mailto:info@innov8itcode.com"
-                                        class="hover:underline">info@innov8itcode.com</a>
-                                </div>
-                                <div class="flex items-center gap-x-4 py-2 px-8 border rounded-lg">
-                                    <span>
-                                        <i class="fa-solid fa-phone fa-lg" aria-hidden="true"></i>
-                                    </span>
-                                    <a href="tel:+977-1234567890" class="hover:underline">+977-1234567890</a>
-                                </div>
-                            </div>
-                        </address>
-                    </div>
+                <div class="social-media flex items-center gap-5 mb-8">
+                  <a
+                    href=""
+                    target="_blank"
+                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in"
+                  >
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a
+                    href=""
+                    target="_blank"
+                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in"
+                  >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
                 </div>
+              </div>
             </div>
-            <div class="copyright_container border-t border-white">
-                <h5 id="copyright_text" class="text-center font-normal tracking-widest leading-[1.75rem] py-4">
-                    © Copyright <span id="copyright_date"></span>. All Rights Reserved
-                    by Innov8ITCode
-                </h5>
+          </div>
+
+          <div class="right sm:flex sm:justify-between">
+            <div class="mb-8">
+              <h2
+                class="md:text-[1.25rem] font-bold leading-[1.24] font-manrope capitalize mb-6"
+              >
+                Quick Link
+              </h2>
+              <ul class="space-y-[6px]">
+                <li><a href="/about">About Company</a></li>
+                <li><a href="/team">Meet Our Team</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+              </ul>
             </div>
+
+            <div class="mb-8">
+              <h2
+                class="md:text-[1.25rem] font-bold mb-8 leading-[1.24] font-manrope capitalize"
+              >
+                blogs
+              </h2>
+              <ul class="space-y-[6px]">
+                <li><a href="/about">About Company</a></li>
+                <li><a href="/team">Meet Our Team</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+              </ul>
+            </div>
+
+            <div class="mb-8">
+              <h2
+                class="md:text-[1.25rem] mb-8 font-bold leading-[1.24] font-manrope capitalize"
+              >
+                official info
+              </h2>
+              <address class="not-italic">
+                <p class="mb-4">Thapagaun, New Baneshwor, Nepal</p>
+                <div class="space-y-5">
+                  <div
+                    class="flex items-center gap-x-4 py-2 px-8 border rounded-lg"
+                  >
+                    <span>
+                      <i
+                        class="fa-solid fa-envelope-open-text fa-lg"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <a
+                      href="mailto:info@innov8itcode.com"
+                      class="hover:underline"
+                      >info@innov8itcode.com</a
+                    >
+                  </div>
+                  <div
+                    class="flex items-center gap-x-4 py-2 px-8 border rounded-lg"
+                  >
+                    <span>
+                      <i class="fa-solid fa-phone fa-lg" aria-hidden="true"></i>
+                    </span>
+                    <a href="tel:+977-1234567890" class="hover:underline"
+                      >+977-1234567890</a
+                    >
+                  </div>
+                </div>
+              </address>
+            </div>
+          </div>
         </div>
+        <div class="copyright_container border-t border-white">
+          <h5
+            id="copyright_text"
+            class="text-center font-normal tracking-widest leading-[1.75rem] py-4"
+          >
+            © Copyright <span id="copyright_date"></span>. All Rights Reserved
+            by Innov8ITCode
+          </h5>
+        </div>
+      </div>
     </footer>
     <!-- js link -->
     <script type="module" src="../js/index.js"></script>
     <!-- gaps-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-</body>
-
+  </body>
 </html>
