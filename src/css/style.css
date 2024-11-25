@@ -135,3 +135,21 @@ body {
 .innov_animation {
   transform: translateX(0);
 }
+
+.title_clip {
+  clip-path: polygon(0% -1%, 81% -14%, 106% 181%, 0% 100%);
+}
+
+.member_social_list {
+  transform: scale(1, 0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: bottom left;
+}
+
+.member_social_list:hover {
+  transform: scale(1, 1);
+}
+
+.member_social_btn:hover + .member_social_list {
+  transform: scale(1, 1);
+}

@@ -4,15 +4,463 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link href="../../assets/css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/output.css" />
+    <title>Innov8ITCode</title>
 </head>
 
 <body>
-    <div class="parent_nav">
-        <div class="one">hi</div>
-        <div class="two">there</div>
-    </div>
+    <header class="shadow-header md:px-2 md:py-2 sticky top-0 z-[100] bg-white">
+        <div class="container--fluid">
+            <div class="header_content flex items-center justify-between">
+                <!-- header logo -->
+                <div>
+                    <div class="header__logo-container w-20">
+                        <img src="../../assets/images/logo/innov8itcode_logo.png" alt="innvo8itcode logo image" />
+                    </div>
+                </div>
+                <!-- main navbar -->
+                <div class="hidden lg:block">
+                    <nav>
+                        <ul class="flex">
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/">home</a>
+                            </li>
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/services">services</a>
+                            </li>
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/courses">courses</a>
+                            </li>
+                            <li class="relative parent_nav">
+                                <a class="nav_link hover_arrow flex items-center gap-1.5 text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/about">
+                                    <span>about</span>
+                                    <span class="arrow_icon translate-y-[1px] text-[0.9rem] font-bold">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+                                </a>
+                                <ul
+                                    class="submenu top-full -left-[1px] absolute z-[100] bg-white shadow-[0_36px_35px_rgba(0,_0,_0,_0.08)] min-w-[230px]">
+                                    <li class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]">
+                                        <a class="flex items-center justify-between gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
+                                            href="/about#introduction">
+                                            <span>introduction</span>
+                                            <span class="text-white">
+                                                <i class="fa-solid fa-angles-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]">
+                                        <a class="flex items-center justify-between gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
+                                            href="/about#instructor">
+                                            <span>instructor</span>
+                                            <span class="text-white">
+                                                <i class="fa-solid fa-angles-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]">
+                                        <a class="flex justify-between items-center gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
+                                            href="/about#team_members">
+                                            <span>team members </span>
+                                            <span class="text-white">
+                                                <i class="fa-solid fa-angles-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/blogs">blogs</a>
+                            </li>
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/contact">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-8">
+                    <!-- get started now -->
+                    <div class="get_started_now hidden md:block">
+                        <button type="button"
+                            class="hover_effect px-6 py-3 bg-[var(--color-primary)] text-[1.0625rem] rounded-[5px] text-white border-none outline-none capitalize">
+                            <span> get started now </span>
+                        </button>
+                    </div>
+                    <!--mobile nav toggle button -->
+                    <div class="mobile_nav_toggler lg:hidden">
+                        <button id="hamburger_btn" type="button">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="14" width="20" height="2" fill="#03041c"></rect>
+                                <rect y="7" width="20" height="2" fill="#03041c"></rect>
+                                <rect width="20" height="2" fill="#03041c"></rect>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div id="mobile_menu"
+            class="mobile_menu translate-x-[102%] transition-transform duration-500 ease-in fixed right-0 top-0 w-[65%] min-h-screen z-[110] bg-white shadow-[0_15px_40px_-5px_rgba(0,_0,_0,_0.1)]">
+            <div class="mobile_header_container flex items-center justify-between bg-[#1d1e33] px-6 py-4">
+                <div class="logo_container w-16">
+                    <img src="../../assets/images/logo/innov8itcode_logo.png" alt="" />
+                </div>
+                <div class="cross_icon">
+                    <button id="cross_btn" type="button"
+                        class="w-10 h-10 cursor-pointer text-xl rounded-[50%] bg-white text-[var(--color-primary)]">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav_container px-6 py-4">
+                <ul>
+                    <li>
+                        <div class="flex items-center">
+                            <a href="/" class="flex justify-between items-center py-2 border-b border-[#f3f3f3] flex-1">
+                                <span class="text-[var(--color-heading)] capitalize font-medium">home</span>
+                            </a>
+                            <span id="mob_drop_submenu" class="bg-[var(--color-primary)] text-white px-4 py-2">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <ul id="mob_submenu" class="overflow-hidden h-0">
+                            <li>
+                                <a href="/"
+                                    class="inline-block w-full py-2 border-b capitalize border-[#f3f3f3] px-4">one</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="introduction" class="mt-20 mb-14">
+            <div class="container--fluid">
+                <div class="intro-content flex flex-col gap-8 lg:flex-row">
+                    <div class="intro order-2 lg:flex-1 lg:order-1">
+                        <p class="leading-[2rem]">
+                            <strong class="text-[var(--color-heading)]">Innov8ITCode</strong>
+                            is a forward-thinking technology solutions provider that bridges
+                            the gap between innovation and education. Alongside delivering
+                            cutting-edge IT services, we empower aspiring professionals
+                            through our comprehensive bootcamp programs. Our bootcamps are
+                            designed to provide hands-on training in high-demand tech
+                            skills, ensuring participants are industry-ready. With a focus
+                            on practical learning, mentorship from seasoned experts, and
+                            real-world projects, we strive to cultivate the next generation
+                            of tech leaders. At [Your IT Company Name], we are committed to
+                            driving success for both businesses and individuals in the
+                            ever-evolving tech landscape.
+                        </p>
+                    </div>
+                    <div class="intro_banner order-1 lg:flex-1 lg:order-2">
+                        <div class="intro_img h-full w-full">
+                            <img src="https://images.pexels.com/photos/7988210/pexels-photo-7988210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                class="rounded-[5px] w-full h-full object-cover" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="instructors" class="mb-20">
+            <div class="container--fluid">
+                <div class="instructor_content">
+                    <div class="instructor_heading mb-8">
+                        <h2 class="team_heading text-[2.25rem] font-semibold font-manrope text-[var(--color-heading)]">
+                            Instructors
+                        </h2>
+                    </div>
+                    <div class="instructor_card_container flex gap-8 md:gap-10 xl:gap-12 flex-col md:flex-row">
+                        <div class="instructor_card md:w-1/2 xl:w-1/3 relative">
+                            <div class="member_img w-full">
+                                <img class="h-full w-full object-cover"
+                                    src="https://bizper.pixcelsthemes.com/bizper/assets/images/team/team-2.png"
+                                    alt="" />
+                            </div>
+                            <div
+                                class="member_desc flex justify-between z-10 items-end w-full absolute -bottom-[1px] -left-[1px]">
+                                <div class="memeber_desc bg-white title_clip px-4 h-[60px] w-[225px]">
+                                    <h3
+                                        class="member_title font-manrope text-[1.25rem] leading-[2.5rem] font-bold text-[var(--color-heading)]">
+                                        Clade Owen
+                                    </h3>
+                                    <p class="-mt-1">CEO &amp; Founder</p>
+                                </div>
+                                <div class="members_socials flex flex-col">
+                                    <span
+                                        class="member_social_btn cursor-pointer order-2 flex items-center justify-center w-[60px] h-[60px] text-white bg-[var(--color-primary)]">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </span>
+
+                                    <ul class="member_social_list bg-white order-1 scale-0">
+                                        <li>
+                                            <a href="" class="flex items-center justify-center w-[60px] h-[60px]">
+                                                <span class="text-[var(--color-heading)]">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="flex items-center justify-center w-[60px] h-[60px]">
+                                                <span class="text-[var(--color-heading)]">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="flex items-center justify-center w-[60px] h-[60px]">
+                                                <span class="text-[var(--color-heading)]">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team_card md:w-1/2 xl:w-1/3 relative">
+                            <div class="member_img w-full">
+                                <img class="h-full w-full object-cover"
+                                    src="https://bizper.pixcelsthemes.com/bizper/assets/images/team/team-2.png"
+                                    alt="" />
+                            </div>
+                            <div
+                                class="member_desc flex justify-between z-10 items-end w-full absolute -bottom-[1px] -left-[1px]">
+                                <div class="memeber_desc bg-white title_clip px-4 h-[60px] w-[225px]">
+                                    <h3
+                                        class="member_title font-manrope text-[1.25rem] leading-[2.5rem] font-bold text-[var(--color-heading)]">
+                                        Clade Owen
+                                    </h3>
+                                    <p class="-mt-1">CEO &amp; Founder</p>
+                                </div>
+                                <div class="members_socials flex flex-col">
+                                    <span
+                                        class="member_social_btn cursor-pointer order-2 flex items-center justify-center w-[60px] h-[60px] text-white bg-[var(--color-primary)]">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </span>
+
+                                    <ul class="member_social_list bg-white order-1 scale-0">
+                                        <li>
+                                            <a href="" class="flex items-center justify-center w-[60px] h-[60px]">
+                                                <span class="text-[var(--color-heading)]">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="flex items-center justify-center w-[60px] h-[60px]">
+                                                <span class="text-[var(--color-heading)]">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="flex items-center justify-center w-[60px] h-[60px]">
+                                                <span class="text-[var(--color-heading)]">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team_members" class="mb-20">
+            <div class="container--fluid">
+                <div class="team_content">
+                    <div class="team_heading mb-8">
+                        <h2 class="team_heading text-[2.25rem] font-semibold font-manrope text-[var(--color-heading)]">
+                            Team Members
+                        </h2>
+                    </div>
+                    <div class="team_card_container flex flex-col gap-8 md:flex-row">
+                        <div class="team_card md:w-1/2 xl:w-1/3 relative">
+                            <div class="member_img w-full">
+                                <img class="h-full w-full object-cover"
+                                    src="https://bizper.pixcelsthemes.com/bizper/assets/images/team/team-2.png"
+                                    alt="" />
+                            </div>
+                            <div
+                                class="member_desc flex justify-between z-10 items-end w-full absolute -bottom-[1px] -left-[1px]">
+                                <div class="memeber_desc bg-white title_clip px-4 h-[60px] w-[225px]">
+                                    <h3
+                                        class="member_title font-manrope text-[1.25rem] leading-[2.5rem] font-bold text-[var(--color-heading)]">
+                                        Clade Owen
+                                    </h3>
+                                    <p class="-mt-1">CEO &amp; Founder</p>
+                                </div>
+                                <div class="members_socials flex flex-col">
+                                    <span
+                                        class="member_social_btn cursor-pointer order-2 flex items-center justify-center w-[60px] h-[60px] text-white bg-[var(--color-primary)]">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                    </span>
+
+                                    <ul class="member_social_list bg-white order-1 scale-0">
+                                        <li>
+                                            <a href="" class="flex items-center justify-center w-[60px] h-[60px]">
+                                                <span class="text-[var(--color-heading)]">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="flex items-center justify-center w-[60px] h-[60px]">
+                                                <span class="text-[var(--color-heading)]">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="flex items-center justify-center w-[60px] h-[60px]">
+                                                <span class="text-[var(--color-heading)]">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#03041C] text-[var(--color-white)]">
+        <div class="container--fluid">
+            <div class="footer_main_content py-[2.5rem]">
+                <div class="left">
+                    <div class="h-auto w-28">
+                        <img src="../../assets/images/logo/white_innov.png" alt="logo of innov8itcode" />
+                    </div>
+                    <div class="md:flex md:gap-16 lg:gap-96 xl:justify-between xl:gap-0 md:mb-12">
+                        <div class="description mb-6">
+                            <p class="leading-[1.75rem] max-w-[320px] lg:max-w-[420px] mb-[1.25rem]">
+                                Join us at Innov8ITCode, where hands-on learning meets expert
+                                instruction to equip you with the skills needed for a
+                                successful career.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="opening-hours flex items-center gap-6 mb-8">
+                                <span class="text-[2.3rem]">
+                                    <i class="fa-sharp fa-regular fa-clock fa-xl"></i>
+                                </span>
+                                <ul class="space-y-2">
+                                    <li>
+                                        <span> Sunday - Friday </span>
+                                    </li>
+                                    <li>
+                                        <span> 9:00 AM - 6:00 PM </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="social-media flex items-center gap-5 mb-8">
+                                <a href="" target="_blank"
+                                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="" target="_blank"
+                                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="" target="_blank"
+                                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right sm:flex sm:justify-between">
+                    <div class="mb-8">
+                        <h2 class="md:text-[1.25rem] font-bold leading-[1.24] font-manrope capitalize mb-6">
+                            Quick Link
+                        </h2>
+                        <ul class="space-y-[6px]">
+                            <li><a href="/about">About Company</a></li>
+                            <li><a href="/team">Meet Our Team</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h2 class="md:text-[1.25rem] font-bold mb-8 leading-[1.24] font-manrope capitalize">
+                            blogs
+                        </h2>
+                        <ul class="space-y-[6px]">
+                            <li><a href="/about">About Company</a></li>
+                            <li><a href="/team">Meet Our Team</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h2 class="md:text-[1.25rem] mb-8 font-bold leading-[1.24] font-manrope capitalize">
+                            official info
+                        </h2>
+                        <address class="not-italic">
+                            <p class="mb-4">Thapagaun, New Baneshwor, Nepal</p>
+                            <div class="space-y-5">
+                                <div class="flex items-center gap-x-4 py-2 px-8 border rounded-lg">
+                                    <span>
+                                        <i class="fa-solid fa-envelope-open-text fa-lg" aria-hidden="true"></i>
+                                    </span>
+                                    <a href="mailto:info@innov8itcode.com"
+                                        class="hover:underline">info@innov8itcode.com</a>
+                                </div>
+                                <div class="flex items-center gap-x-4 py-2 px-8 border rounded-lg">
+                                    <span>
+                                        <i class="fa-solid fa-phone fa-lg" aria-hidden="true"></i>
+                                    </span>
+                                    <a href="tel:+977-1234567890" class="hover:underline">+977-1234567890</a>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright_container border-t border-white">
+                <h5 id="copyright_text" class="text-center font-normal tracking-widest leading-[1.75rem] py-4">
+                    © Copyright <span id="copyright_date"></span>. All Rights Reserved
+                    by Innov8ITCode
+                </h5>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
