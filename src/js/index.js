@@ -7,6 +7,7 @@ function GetCursorPosition() {
     });
 }
 
+
 function ToggleMobileSubmenu() {
     const mobileDropBtn = document.getElementById("mob_drop_submenu");
     const mobileSubMenu = document.getElementById("mob_submenu");

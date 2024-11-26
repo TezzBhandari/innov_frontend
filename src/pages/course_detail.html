@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../assets/css/output.css" />
+    <title>Innov8ITCode</title>
+</head>
+
+<body>
+    <header class="shadow-header md:px-2 md:py-2 sticky top-0 z-[100] bg-white">
+        <div class="container--fluid">
+            <div class="header_content flex items-center justify-between">
+                <!-- header logo -->
+                <div>
+                    <div class="header__logo-container w-20">
+                        <img src="../../assets/images/logo/innov8itcode_logo.png" alt="innvo8itcode logo image" />
+                    </div>
+                </div>
+                <!-- main navbar -->
+                <div class="hidden lg:block">
+                    <nav>
+                        <ul class="flex">
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/">home</a>
+                            </li>
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/services">services</a>
+                            </li>
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/courses">courses</a>
+                            </li>
+                            <li class="relative parent_nav">
+                                <a class="nav_link hover_arrow flex items-center gap-1.5 text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/about">
+                                    <span>about</span>
+                                    <span class="arrow_icon translate-y-[1px] text-[0.9rem] font-bold">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </span>
+                                </a>
+                                <ul
+                                    class="submenu top-full -left-[1px] absolute z-[100] bg-white shadow-[0_36px_35px_rgba(0,_0,_0,_0.08)] min-w-[230px]">
+                                    <li class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]">
+                                        <a class="flex items-center justify-between gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
+                                            href="/about#introduction">
+                                            <span>introduction</span>
+                                            <span class="text-white">
+                                                <i class="fa-solid fa-angles-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]">
+                                        <a class="flex items-center justify-between gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
+                                            href="/about#instructor">
+                                            <span>instructor</span>
+                                            <span class="text-white">
+                                                <i class="fa-solid fa-angles-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="hover:bg-[var(--color-primary)] hover:text-white text-[#1F1F25]">
+                                        <a class="flex justify-between items-center gap-1.5 capitalize leading-[1.875rem] font-bold px-3 py-1.5 tracking-wide"
+                                            href="/about#team_members">
+                                            <span>team members </span>
+                                            <span class="text-white">
+                                                <i class="fa-solid fa-angles-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/blogs">blogs</a>
+                            </li>
+                            <li>
+                                <a class="inline-block text-[1.125rem] text-[var(--color-heading)] capitalize leading-[1.875rem] hover:text-[var(--color-primary)] font-bold px-3 py-1 tracking-wide"
+                                    href="/contact">contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex items-center gap-8">
+                    <!-- get started now -->
+                    <div class="get_started_now hidden md:block">
+                        <button type="button"
+                            class="hover_effect px-6 py-3 bg-[var(--color-primary)] text-[1.0625rem] rounded-[5px] text-white border-none outline-none capitalize">
+                            <span>get started now </span>
+                        </button>
+                    </div>
+                    <!--mobile nav toggle button -->
+                    <div class="mobile_nav_toggler lg:hidden">
+                        <button id="hamburger_btn" type="button">
+                            <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="14" width="20" height="2" fill="#03041c"></rect>
+                                <rect y="7" width="20" height="2" fill="#03041c"></rect>
+                                <rect width="20" height="2" fill="#03041c"></rect>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div id="mobile_menu"
+            class="mobile_menu translate-x-[102%] transition-transform duration-500 ease-in fixed right-0 top-0 w-[65%] min-h-screen z-[110] bg-white shadow-[0_15px_40px_-5px_rgba(0,_0,_0,_0.1)]">
+            <div class="mobile_header_container flex items-center justify-between bg-[#1d1e33] px-6 py-4">
+                <div class="logo_container w-16">
+                    <img src="../../assets/images/logo/innov8itcode_logo.png" alt="" />
+                </div>
+                <div class="cross_icon">
+                    <button id="cross_btn" type="button"
+                        class="w-10 h-10 cursor-pointer text-xl rounded-[50%] bg-white text-[var(--color-primary)]">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav_container px-6 py-4">
+                <ul>
+                    <li>
+                        <div class="flex items-center">
+                            <a href="/" class="flex justify-between items-center py-2 border-b border-[#f3f3f3] flex-1">
+                                <span class="text-[var(--color-heading)] capitalize font-medium">home</span>
+                            </a>
+                            <span id="mob_drop_submenu" class="bg-[var(--color-primary)] text-white px-4 py-2">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <ul id="mob_submenu" class="overflow-hidden h-0">
+                            <li>
+                                <a href="/"
+                                    class="inline-block w-full py-2 border-b capitalize border-[#f3f3f3] px-4">one</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex flex-col gap-y-8 pb-6">
+            <section class="w-full md:h-[300px]" role="banner">
+                <div
+                    class="h-full w-full bg-[url('../../assets/images/images/content_banner.jpg')] bg-no-repeat bg-cover bg-center-center">
+                    <div class="container--fluid h-full w-full text-white pt-12">
+                        <h1 class="text-4xl font-bold text-[var(--color-heading)] py-12">
+                            Front-end Engineering
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <section class="container--fluid min-h-[100%] flex flex-col-reverse gap-8 lg:flex-row">
+                <div class="lg:w-[70%] flex flex-col gap-y-8">
+                    <div class="flex flex-wrap w-full gap-4 md:flex-nowrap md:justify-start md:gap-0">
+                        <button
+                            class="tab flex-1 min-w-[calc(50%-0.5rem)] md:min-w-0 capitalize border rounded-[5px] px-3 py-2"
+                            data-target="#tab1">
+                            Outcome
+                        </button>
+                        <button
+                            class="tab flex-1 min-w-[calc(50%-0.5rem)] md:min-w-0 capitalize border rounded-[5px] px-3 py-2"
+                            data-target="#tab2">
+                            Curriculum
+                        </button>
+                        <button
+                            class="tab flex-1 min-w-[calc(50%-0.5rem)] md:min-w-0 capitalize border rounded-[5px] px-3 py-2"
+                            data-target="#tab3">
+                            Instructors
+                        </button>
+                    </div>
+                    <hr />
+                    <div class="h-full px-4">
+                        <div id="tab1" class="tab-content h-full hidden space-y-6">
+                            <h2 class="capitalize font-semibold text-xl text-[var(--color-heading)]">
+                                What you'll learn?
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+                                ab excepturi earum aliquid iste nulla, sequi corporis cum,
+                                temporibus non sed? Dolor eius nisi maxime cupiditate,
+                                reprehenderit libero nemo quo.
+                            </p>
+                        </div>
+                        <div id="tab2" class="tab-content h-full hidden space-y-6">
+                            <h2 class="capitalize font-semibold text-xl text-[var(--color-heading)]">
+                                Syllabus
+                            </h2>
+                            <div class="divide-y divide-gray-200 border border-gray-200 rounded-lg">
+                                <div class="w-full">
+                                    <h3 class="accordion-header accordion-title text-lg font-semibold text-[var(--color-heading)] cursor-pointer flex justify-between items-center px-4 py-6 hover:bg-gray-50"
+                                        data-target="#body1">
+                                        Section 1
+                                    </h3>
+                                    <div class="accordion-body hidden overflow-hidden px-4 py-3 bg-gray-50 transition-all duration-200 ease-linear"
+                                        id="body1">
+                                        <ul class="space-y-2">
+                                            <li
+                                                class="cursor-pointer p-2 rounded-md hover:bg-gray-200 transition-colors duration-150">
+                                                Lecture 1
+                                            </li>
+                                            <li
+                                                class="cursor-pointer p-2 rounded-md hover:bg-gray-200 transition-colors duration-150">
+                                                Lecture 2
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <h3 class="accordion-header accordion-title text-lg font-semibold text-[var(--color-heading)] cursor-pointer flex justify-between items-center px-4 py-6 hover:bg-gray-50"
+                                        data-target="#body2">
+                                        Section 2
+                                    </h3>
+                                    <div class="accordion-body overflow-hidden hidden max-h-0 px-4 py-3 bg-gray-50 transition-all duration-200 ease-linear"
+                                        id="body2">
+                                        <ul class="space-y-2">
+                                            <li
+                                                class="cursor-pointer p-2 rounded-md hover:bg-gray-200 transition-colors duration-150 ease-in-out">
+                                                Lecture 1
+                                            </li>
+                                            <li
+                                                class="cursor-pointer p-2 rounded-md hover:bg-gray-200 transition-colors duration-150 ease-in-out">
+                                                Lecture 2
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-content h-full hidden space-y-6">
+                            <h2 class="capitalize font-semibold text-2xl text-[var(--color-heading)]">
+                                Instructors
+                            </h2>
+                            <div class="space-y-4 w-full md:w-[60%]">
+                                <div class="flex gap-x-6 md:gap-x-16 w-full border shadow-md items-center p-3">
+                                    <div class="w-24 aspect-square rounded-full">
+                                        <img class="w-full h-full rounded-full" src="../images/frontend.jpg"
+                                            alt="Tejendra Singh Bhandari" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <h2 class="font-bold md:text-xl">
+                                            Tejendra Singh Bhandari
+                                        </h2>
+                                        <em>Fullstack Engineer</em>
+                                    </div>
+                                </div>
+                                <div class="flex gap-x-6 md:gap-x-16 w-full border shadow-md items-center p-3">
+                                    <div class="w-24 aspect-square rounded-full">
+                                        <img class="w-full h-full rounded-full" src="../images/frontend.jpg"
+                                            alt="Arun Prasad Paneru" />
+                                    </div>
+                                    <div class="space-y-2">
+                                        <h2 class="font-bold md:text-xl">Arun Prasad Paneru</h2>
+                                        <em>Fullstack Engineer</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-[30%] lg:relative text-[var(--color-heading)]">
+                    <div
+                        class="px-4 py-2 border shadow-xl rounded-[5px] space-y-4 lg:relative lg:right-0 lg:top-[-10%] lg:z-50">
+                        <figure>
+                            <img class="object-cover" src="../../assets/images/images/studying.jpg"
+                                alt="course image" />
+                        </figure>
+                        <button
+                            class="capitalize bg-[var(--color-primary)] py-3 px-6 rounded-[5px] w-full text-white font-bold">
+                            Start Learning
+                        </button>
+                        <h2 class="font-bold text-xl">Course description:</h2>
+                        <ul class="capitalize">
+                            <li class="flex gap-x-28 items-center py-6">
+                                <span class="capitalize flex-1 font-semibold">Duration:</span>
+                                <span class="flex-1">3 months</span>
+                            </li>
+                            <hr />
+                            <li class="flex gap-x-28 items-center py-6">
+                                <span class="capitalize flex-1 font-semibold">Price:</span>
+                                <span class="capitalize flex-1">Nrs. 15000</span>
+                            </li>
+                            <hr />
+                            <li class="py-6 space-y-6">
+                                <span class="capitalize font-semibold">Tech Stack:</span>
+                                <div class="flex gap-4 flex-wrap">
+                                    <span class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]">HTML5</span>
+                                    <span class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]">CSS</span>
+                                    <span class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]">JS</span>
+                                    <span class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]">Git</span>
+                                    <span class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]">React</span>
+                                    <span class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]">NextJs</span>
+                                    <span class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]">Firebase</span>
+                                    <span class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]">JIRA</span>
+                                    <span class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]">Slack</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div
+                class="container--fluid w-full h-[200px] flex flex-col items-center justify-center gap-y-4 bg-[var(--color-secondary)] md:flex-row md:justify-around md:items-center mb-20 rounded-[5px]">
+                <div class="text-[var(--color-white)] capitalize text-3xl font-bold">
+                    <h2>Get Trained with</h2>
+                    <h2>Innov8ITCode</h2>
+                </div>
+                <div>
+                    <button
+                        class="capitalize p-3 font-bold flex items-center border border-white gap-x-2 rounded-[5px] text-white">
+                        <p>View All Courses</p>
+                        <i class="fa-solid fa-arrow-right fa-lg" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-[#03041C] text-[var(--color-white)]">
+        <div class="container--fluid">
+            <div class="footer_main_content py-[2.5rem]">
+                <div class="left">
+                    <div class="h-auto w-28">
+                        <img src="../../assets/images/logo/white_innov.png" alt="logo of innov8itcode" />
+                    </div>
+                    <div class="md:flex md:gap-16 lg:gap-96 xl:justify-between xl:gap-0 md:mb-12">
+                        <div class="description mb-6">
+                            <p class="leading-[1.75rem] max-w-[320px] lg:max-w-[420px] mb-[1.25rem]">
+                                Join us at Innov8ITCode, where hands-on learning meets expert
+                                instruction to equip you with the skills needed for a
+                                successful career.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="opening-hours flex items-center gap-6 mb-8">
+                                <span class="text-[2.3rem]">
+                                    <i class="fa-sharp fa-regular fa-clock fa-xl"></i>
+                                </span>
+                                <ul class="space-y-2">
+                                    <li>
+                                        <span> Sunday - Friday </span>
+                                    </li>
+                                    <li>
+                                        <span> 9:00 AM - 6:00 PM </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="social-media flex items-center gap-5 mb-8">
+                                <a href="" target="_blank"
+                                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="" target="_blank"
+                                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="" target="_blank"
+                                    class="h-[40px] text-[1.25rem] w-[40px] bg-[#1d1e33] flex items-center justify-center rounded-[5px] hover:bg-[var(--color-primary)] hover:scale-110 transition-all duration-300 ease-in">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right sm:flex sm:justify-between">
+                    <div class="mb-8">
+                        <h2 class="md:text-[1.25rem] font-bold leading-[1.24] font-manrope capitalize mb-6">
+                            Quick Link
+                        </h2>
+                        <ul class="space-y-[6px]">
+                            <li><a href="/about">About Company</a></li>
+                            <li><a href="/team">Meet Our Team</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h2 class="md:text-[1.25rem] font-bold mb-8 leading-[1.24] font-manrope capitalize">
+                            blogs
+                        </h2>
+                        <ul class="space-y-[6px]">
+                            <li><a href="/about">About Company</a></li>
+                            <li><a href="/team">Meet Our Team</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-8">
+                        <h2 class="md:text-[1.25rem] mb-8 font-bold leading-[1.24] font-manrope capitalize">
+                            official info
+                        </h2>
+                        <address class="not-italic">
+                            <p class="mb-4">Thapagaun, New Baneshwor, Nepal</p>
+                            <div class="space-y-5">
+                                <div class="flex items-center gap-x-4 py-2 px-8 border rounded-lg">
+                                    <span>
+                                        <i class="fa-solid fa-envelope-open-text fa-lg" aria-hidden="true"></i>
+                                    </span>
+                                    <a href="mailto:info@innov8itcode.com"
+                                        class="hover:underline">info@innov8itcode.com</a>
+                                </div>
+                                <div class="flex items-center gap-x-4 py-2 px-8 border rounded-lg">
+                                    <span>
+                                        <i class="fa-solid fa-phone fa-lg" aria-hidden="true"></i>
+                                    </span>
+                                    <a href="tel:+977-1234567890" class="hover:underline">+977-1234567890</a>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright_container border-t border-white">
+                <h5 id="copyright_text" class="text-center font-normal tracking-widest leading-[1.75rem] py-4">
+                    © Copyright <span id="copyright_date"></span>. All Rights Reserved
+                    by Innov8ITCode
+                </h5>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../js/course_detail.js"></script>
+</body>
+
+</html>
