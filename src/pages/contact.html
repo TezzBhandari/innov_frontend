@@ -144,7 +144,7 @@
                 type="button"
                 class="hover_effect px-6 py-3 bg-[var(--color-primary)] text-[1.0625rem] rounded-[5px] text-white border-none outline-none capitalize"
               >
-                <span>get started now </span>
+                <span> get started now </span>
               </button>
             </div>
             <!--mobile nav toggle button -->
@@ -221,251 +221,176 @@
         </div>
       </div>
     </header>
-
     <main>
-      <div class="flex flex-col gap-y-8 pb-6">
-        <section class="w-full md:h-[300px]" role="banner">
+      <!-- banner container -->
+      <div class="h-[300px] w-full hidden md:block" role="banner">
+        <div
+          class="h-full w-full bg-[url('../../assets/images/images/content_banner.jpg')] bg-no-repeat bg-cover bg-center-center"
+        >
           <div
-            class="h-full w-full bg-[url('../../assets/images/images/content_banner.jpg')] bg-no-repeat bg-cover bg-center-center"
+            class="container--fluid h-full w-full text-white flex flex-col justify-center gap-y-6"
           >
-            <div class="container--fluid h-full w-full text-white pt-12">
-              <h1 class="text-4xl font-bold text-[var(--color-heading)] py-12">
-                Front-end Engineering
+            <div>
+              <h1 class="text-4xl text-[var(--color-heading)] font-bold">
+                Contact Us
               </h1>
             </div>
           </div>
-        </section>
-        <section
-          class="container--fluid min-h-[100%] flex flex-col-reverse gap-8 lg:flex-row"
-        >
-          <div class="lg:w-[70%] flex flex-col gap-y-8">
-            <div
-              class="flex flex-wrap w-full gap-4 md:flex-nowrap md:justify-start md:gap-0"
+        </div>
+      </div>
+
+      <div
+        class="container--fluid flex flex-col gap-y-12 lg:flex-row mt-12 md:gap-x-16"
+      >
+        <!-- title and form -->
+        <div class="flex flex-col gap-y-12 lg:flex-1">
+          <!-- title  -->
+          <div class="flex flex-col gap-y-2">
+            <strong
+              class="text-[2.25rem] capitalize leading-[2.5rem] text-[var(--color-primary)]"
+              >Get in touch !</strong
             >
-              <button
-                class="tab flex-1 min-w-[calc(50%-0.5rem)] md:min-w-0 capitalize border rounded-[5px] px-3 py-2"
-                data-target="#tab1"
-              >
-                Outcome
-              </button>
-              <button
-                class="tab flex-1 min-w-[calc(50%-0.5rem)] md:min-w-0 capitalize border rounded-[5px] px-3 py-2"
-                data-target="#tab2"
-              >
-                Curriculum
-              </button>
-              <button
-                class="tab flex-1 min-w-[calc(50%-0.5rem)] md:min-w-0 capitalize border rounded-[5px] px-3 py-2"
-                data-target="#tab3"
-              >
-                Instructors
-              </button>
-            </div>
-            <hr />
-            <div class="h-full px-4">
-              <div id="tab1" class="tab-content h-full hidden space-y-6">
-                <h2
-                  class="capitalize font-semibold text-xl text-[var(--color-heading)]"
-                >
-                  What you'll learn?
-                </h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-                  ab excepturi earum aliquid iste nulla, sequi corporis cum,
-                  temporibus non sed? Dolor eius nisi maxime cupiditate,
-                  reprehenderit libero nemo quo.
-                </p>
-              </div>
-              <div id="tab2" class="tab-content h-full hidden space-y-6">
-                <h2
-                  class="capitalize font-semibold text-xl text-[var(--color-heading)]"
-                >
-                  Syllabus
-                </h2>
-                <div
-                  class="divide-y divide-gray-200 border border-gray-200 rounded-lg"
-                >
-                  <div class="w-full">
-                    <h3
-                      class="accordion-header accordion-title text-lg font-semibold text-[var(--color-heading)] cursor-pointer flex justify-between items-center px-4 py-6 hover:bg-gray-50"
-                      data-target="#body1"
-                    >
-                      Section 1
-                    </h3>
-                    <div
-                      class="accordion-body hidden overflow-hidden px-4 py-3 bg-gray-50 transition-all duration-200 ease-linear"
-                      id="body1"
-                    >
-                      <ul class="space-y-2">
-                        <li
-                          class="cursor-pointer p-2 rounded-md hover:bg-gray-200 transition-colors duration-150"
-                        >
-                          Lecture 1
-                        </li>
-                        <li
-                          class="cursor-pointer p-2 rounded-md hover:bg-gray-200 transition-colors duration-150"
-                        >
-                          Lecture 2
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <h3
-                      class="accordion-header accordion-title text-lg font-semibold text-[var(--color-heading)] cursor-pointer flex justify-between items-center px-4 py-6 hover:bg-gray-50"
-                      data-target="#body2"
-                    >
-                      Section 2
-                    </h3>
-                    <div
-                      class="accordion-body overflow-hidden hidden max-h-0 px-4 py-3 bg-gray-50 transition-all duration-200 ease-linear"
-                      id="body2"
-                    >
-                      <ul class="space-y-2">
-                        <li
-                          class="cursor-pointer p-2 rounded-md hover:bg-gray-200 transition-colors duration-150 ease-in-out"
-                        >
-                          Lecture 1
-                        </li>
-                        <li
-                          class="cursor-pointer p-2 rounded-md hover:bg-gray-200 transition-colors duration-150 ease-in-out"
-                        >
-                          Lecture 2
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="tab3" class="tab-content h-full hidden space-y-6">
-                <h2
-                  class="capitalize font-semibold text-2xl text-[var(--color-heading)]"
-                >
-                  Instructors
-                </h2>
-                <div class="space-y-4 w-full md:w-[60%]">
-                  <div
-                    class="flex gap-x-6 md:gap-x-16 w-full border shadow-md items-center p-3"
-                  >
-                    <div class="w-24 aspect-square rounded-full">
-                      <img
-                        class="w-full h-full rounded-full"
-                        src="../images/frontend.jpg"
-                        alt="Tejendra Singh Bhandari"
-                      />
-                    </div>
-                    <div class="space-y-2">
-                      <h2 class="font-bold md:text-xl">
-                        Tejendra Singh Bhandari
-                      </h2>
-                      <em>Fullstack Engineer</em>
-                    </div>
-                  </div>
-                  <div
-                    class="flex gap-x-6 md:gap-x-16 w-full border shadow-md items-center p-3"
-                  >
-                    <div class="w-24 aspect-square rounded-full">
-                      <img
-                        class="w-full h-full rounded-full"
-                        src="../images/frontend.jpg"
-                        alt="Arun Prasad Paneru"
-                      />
-                    </div>
-                    <div class="space-y-2">
-                      <h2 class="font-bold md:text-xl">Arun Prasad Paneru</h2>
-                      <em>Fullstack Engineer</em>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p class="text-[1.25rem] text-[var(--color-heading)]">
+              Coding Your Success Starts with a Conversation
+            </p>
           </div>
-          <div class="lg:w-[30%] lg:relative text-[var(--color-heading)]">
-            <div
-              class="px-4 py-2 border shadow-xl rounded-[5px] space-y-4 lg:relative lg:right-0 lg:top-[-10%] lg:z-50"
-            >
-              <figure>
-                <img
-                  class="object-cover"
-                  src="../../assets/images/images/studying.jpg"
-                  alt="course image"
-                />
-              </figure>
-              <button
-                class="capitalize bg-[var(--color-primary)] py-3 px-6 rounded-[5px] w-full text-white font-bold"
+          <!-- form container  -->
+
+          <form action="" class="space-y-4 w-full">
+            <div class="space-y-2 w-full">
+              <label
+                class="capitalize block font-semibold text-[var(--color-heading)]"
+                for="name"
+                >Your Name <span class="font-bold">*</span></label
               >
-                Start Learning
-              </button>
-              <h2 class="font-bold text-xl">Course description:</h2>
-              <ul class="capitalize">
-                <li class="flex gap-x-28 items-center py-6">
-                  <span class="capitalize flex-1 font-semibold">Duration:</span>
-                  <span class="flex-1">3 months</span>
-                </li>
-                <hr />
-                <li class="flex gap-x-28 items-center py-6">
-                  <span class="capitalize flex-1 font-semibold">Price:</span>
-                  <span class="capitalize flex-1">Nrs. 15000</span>
-                </li>
-                <hr />
-                <li class="py-6 space-y-6">
-                  <span class="capitalize font-semibold">Tech Stack:</span>
-                  <div class="flex gap-4 flex-wrap">
-                    <span
-                      class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]"
-                      >HTML5</span
-                    >
-                    <span
-                      class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]"
-                      >CSS</span
-                    >
-                    <span
-                      class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]"
-                      >JS</span
-                    >
-                    <span
-                      class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]"
-                      >Git</span
-                    >
-                    <span
-                      class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]"
-                      >React</span
-                    >
-                    <span
-                      class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]"
-                      >NextJs</span
-                    >
-                    <span
-                      class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]"
-                      >Firebase</span
-                    >
-                    <span
-                      class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]"
-                      >JIRA</span
-                    >
-                    <span
-                      class="space-x-2 shadow-sm px-4 py-1 border rounded-[5px]"
-                      >Slack</span
-                    >
-                  </div>
-                </li>
+              <input
+                class="border p-2 focus:outline-1 focus:outline-[var(--color-secondary)] w-full"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required
+                aria-required="true"
+                autocomplete="on"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="capitalize block font-semibold text-[var(--color-heading)]"
+                for="email"
+                >Your Email<span class="font-bold">*</span></label
+              >
+              <input
+                class="border p-2 focus:outline-1 focus:outline-[var(--color-secondary)] w-full"
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                id="email"
+                required
+                aria-required="true"
+                autocomplete="on"
+              />
+            </div>
+            <div class="space-y-2">
+              <label
+                class="capitalize block font-semibold text-[var(--color-heading)]"
+                for="message"
+                >Remarks<span class="font-bold">*</span></label
+              >
+              <textarea
+                class="border p-2 focus:outline-1 focus:outline-[var(--color-secondary)] w-full"
+                name="message"
+                id="message"
+                placeholder="Tell us about you"
+                rows="5"
+                required
+                aria-required="true"
+                autocomplete="off"
+                maxlength="100"
+              ></textarea>
+            </div>
+            <button
+              class="capitalize bg-[var(--color-secondary)] py-3 px-6 rounded first-line:text-white font-bold"
+              type="submit"
+              aria-label="send message"
+            >
+              Send message
+            </button>
+          </form>
+        </div>
+
+        <!-- contacts and maps -->
+        <div class="flex flex-col gap-y-12 lg:flex-1">
+          <!-- contacts  -->
+          <div
+            class="flex flex-col justify-between items-center gap-y-8 w-full md:flex-row"
+          >
+            <div class="flex flex-col justify-center items-center gap-y-4">
+              <img
+                src="../../public/icon-images/location_icon.png"
+                alt="location icon"
+              />
+              <p
+                aria-label="address of vera institute "
+                class="text-[var(--color-heading)]"
+              >
+                Sinamangal,Kathmandu,Nepal
+              </p>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-y-4">
+              <img
+                src="../../public/icon-images/phone_icon.png"
+                alt="location icon"
+              />
+              <ul
+                aria-label="phone numbers of vera institute "
+                class="text-[var(--color-heading)]"
+              >
+                <li>+97701-414243</li>
+              </ul>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-y-4">
+              <img
+                src="../../public/icon-images/clock_icon.png"
+                alt="location icon"
+              />
+              <ul
+                aria-label="opening and closing time for vera institute "
+                class="text-[var(--color-heading)]"
+              >
+                <li>Sun-Fri: 10 AM - 5 PM</li>
+                <li>Sat: 10 AM - 5 PM</li>
               </ul>
             </div>
           </div>
-        </section>
+          <!-- map  -->
+          <div class="h-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.8499364410022!2d85.33132767525319!3d27.691032576191926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19fb1cb6c409%3A0xe2d38b35924bbe10!2sINNOV8ITCODE!5e0!3m2!1sen!2snp!4v1732693454744!5m2!1sen!2snp"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="container--fluid py-8 mb-16">
         <div
-          class="container--fluid w-full h-[200px] flex flex-col items-center justify-center gap-y-4 bg-[var(--color-secondary)] md:flex-row md:justify-around md:items-center mb-20 rounded-[5px]"
+          class="w-full h-[200px] flex flex-col items-center justify-center gap-y-4 bg-[var(--color-secondary)] md:flex-row md:justify-around md:items-center"
         >
-          <div class="text-[var(--color-white)] capitalize text-3xl font-bold">
-            <h2>Get Trained with</h2>
-            <h2>Innov8ITCode</h2>
+          <div class="text-white capitalize text-3xl font-bold">
+            <h2 class="">Learn From the</h2>
+            <h2 class="">Vera institute</h2>
           </div>
           <div>
             <button
-              class="capitalize p-3 font-bold flex items-center border border-white gap-x-2 rounded-[5px] text-white"
+              class="capitalize p-3 font-bold flex items-center border border-white gap-x-2 bg-white rounded text-[var(--color-secondary)] hover:bg-[var(--color-secondary)] hover:text-white hover:border-white"
             >
-              <p>View All Courses</p>
-              <i class="fa-solid fa-arrow-right fa-lg" aria-hidden="true"></i>
+              <p>View All courses</p>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -615,6 +540,5 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="../js/course_detail.js"></script>
   </body>
 </html>
